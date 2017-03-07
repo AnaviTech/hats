@@ -25,10 +25,10 @@ product_id 0x0001
 product_ver 0x0001
 
 # ASCII vendor string  (max 255 characters)
-vendor "RabbitMax by Leon Anavi"
+vendor "ANAVI"
 
 # ASCII product string (max 255 characters)
-product "RabbitMax Flex"
+product "ANAVI Flex HAT"
 
 
 ########################################################################
