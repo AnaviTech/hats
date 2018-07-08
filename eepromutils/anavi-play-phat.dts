@@ -1,0 +1,57 @@
+/dts-v1/;
+/plugin/;
+/ {
+   compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+   fragment@0 {
+      target-path = "/";
+      __overlay__ {
+         keypad: anavi-play-phat {
+            compatible = "gpio-keys";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            autorepeat;
+            button@17 {
+               label = "right";
+               linux,code = <106>;
+               gpios = <&gpio 17 1>;
+            };
+            button@4 {
+            label = "left";
+            linux,code = <105>;
+            gpios = <&gpio 4 1>;
+            };
+            button@27 {
+               label = "down";
+               linux,code = <108>;
+               gpios = <&gpio 27 1>;
+            };
+            button@22 {
+               label = "up";
+               linux,code = <103>;
+               gpios = <&gpio 22 1>;
+            };
+            button@5 {
+               label = "start";
+               linux,code = <57>;
+               gpios = <&gpio 5 1>;
+            };
+            button@6 {
+               label = "select";
+               linux,code = <31>;
+               gpios = <&gpio 6 1>;
+            };
+            button@19 {
+               label = "A";
+               linux,code = <45>;
+               gpios = <&gpio 19 1>;
+            };
+            button@26 {
+               label = "B";
+               linux,code = <21>;
+               gpios = <&gpio 26 1>;
+            };
+         };
+      };
+   };
+};
