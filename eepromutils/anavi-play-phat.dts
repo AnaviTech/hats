@@ -43,12 +43,12 @@
             };
             button@19 {
                label = "A";
-               linux,code = <45>;
+               linux,code = <30>;
                gpios = <&gpio 19 1>;
             };
             button@26 {
                label = "B";
-               linux,code = <21>;
+               linux,code = <48>;
                gpios = <&gpio 26 1>;
             };
          };
