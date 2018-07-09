@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 / {
-   compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+   compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709", "brcm,bcm2710";
 
    fragment@0 {
       target-path = "/";
@@ -17,9 +17,9 @@
                gpios = <&gpio 17 1>;
             };
             button@4 {
-            label = "left";
-            linux,code = <105>;
-            gpios = <&gpio 4 1>;
+               label = "left";
+               linux,code = <105>;
+               gpios = <&gpio 4 1>;
             };
             button@27 {
                label = "down";
